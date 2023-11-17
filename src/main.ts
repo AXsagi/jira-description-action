@@ -29,6 +29,7 @@ async function run(): Promise<void> {
 
     //const details = await jiraConnector.getTicketDetails(key);
     //await githubConnector.updatePrDetails(details);
+    await jiraConnector.getTicketDetails(key);
 
     setOutputs(true, source);
   } catch (error) {
